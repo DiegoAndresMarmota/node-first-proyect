@@ -13,13 +13,6 @@ aplicacion.set("views", join(rutaPrincipal, "views"));
 //Activar caracteristica de View Engine
 aplicacion.set("view engine", "ejs");
 
-//Renderizar en el front, un archivo html, a traves de la ruta .ejs
-aplicacion.get("/", (req, res) => res.render("indice"));
-
-aplicacion.get("/acerca_de", (req, res) => res.render("acerca_de"));
-
-aplicacion.get("/contacto", (req, res) => res.render("contacto"));
-
 aplicacion.listen(3000);
 
 console.log("Servidor esta escuchando en el puerto", 3000);
