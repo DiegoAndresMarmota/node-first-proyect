@@ -18,6 +18,8 @@ aplicacion.set("view engine", "ejs");
 //Usar index.js de routes
 aplicacion.use(rutasIndice);
 
+aplicacion.use(express.static(join(rutaPrincipal, "public")));
+
 //Aplicacion sera ejecutada desde el localhost:
 aplicacion.listen(3000);
 
