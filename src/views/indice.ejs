@@ -7,10 +7,22 @@
     <title><%= titulo %></title>
     <%- include('partials/head') %>
   </head>
+
   <body>
     <%- include('partials/navigation') %>
 
-    <h1>Hello There, Inicio</h1>
+    <!--Contenido  Principal-->
+    <header
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/img/Emblema_Durin.png" alt="Emblema_durin" class="w-25" />
+        <h1 class="display-1 my-5 text-uppercase fw-bold">La Casa de Durin</h1>
+        <a href="/acerca_de" class="btn btn-secondary w-25"
+          >Entrar al reino de Durin</a
+        >
+      </div>
+    </header>
 
     <%- include('partials/footer') %>
   </body>
