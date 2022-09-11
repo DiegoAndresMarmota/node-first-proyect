@@ -21,6 +21,6 @@ aplicacion.use(rutasIndice);
 aplicacion.use(express.static(join(rutaPrincipal, "public")));
 
 //Aplicacion sera ejecutada desde el localhost:
-aplicacion.listen(3000);
+aplicacion.listen(process.env.PORT || 3000);
 
-console.log("Servidor esta escuchando en el puerto", 3000);
+console.log("Servidor esta escuchando en el puerto", process.env.PORT || 3000);
