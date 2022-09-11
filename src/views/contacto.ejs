@@ -7,11 +7,44 @@
     <title><%= titulo %></title>
     <%- include('partials/head') %>
   </head>
-  
+
   <body>
     <%- include('partials/navigation') %>
 
-    <h1>Hello There, Contacto</h1>
+    <div
+      class="container vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="card bg-dark text-white text-center">
+        <div class="card-header">
+          <h3>Contáctame</h3>
+        </div>
+        <div class="card-body text-start">
+          <form>
+            <div class="mb-3">
+              <label for="email"> Email: </label>
+              <input
+                type="email"
+                placeholder="Ingresa tu email"
+                class="form-control"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="mesage"> Mensaje: </label>
+              <textarea
+                name="message"
+                rows="3"
+                class="form-control"
+                placeholder="Escribe tu comentario"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary">Enviar información</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
 
     <%- include('partials/footer') %>
   </body>
